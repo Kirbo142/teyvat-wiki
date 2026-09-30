@@ -9,7 +9,7 @@ Milan Smit 97129336
 
 ### Projectomschrijving
 
-Wij gaan samen een wiki maken over Genshin Impact en de wereld van Teyvat. Wij vinden de wereld, de personages en de verhalen erg interessant. In deze wiki komt heel veel informatie zoals quests,karakters,wapens,vijanden,locaties en oculeses Met dit project willen wij alles overzichtelijk verzamelen op één plek. Wij gebruiken HTML voor de structuur, CSS voor de opmaak en JavaScript voor de interactiviteit, zoals zoeken en filteren. 
+Wij gaan samen een wiki maken over Genshin Impact en de wereld van Teyvat. Wij vinden de wereld, de personages en de verhalen erg interessant. In deze wiki komt heel veel informatie zoals quests,karakters,wapens,vijanden,locaties en oculeses Met dit project willen wij alles overzichtelijk verzamelen op één plek. Voor de dingen zoals enemys character en weapons gaan we cards maken, dus dat je er gewoon op kan klikken en dat je dan op een soort kaart info krijgt over het. Wij gebruiken HTML voor de structuur, CSS voor de opmaak en JavaScript voor de interactiviteit, zoals zoeken, filteren en de weapon,enemy en character cards. 
 
 ### Randvoorwaarden bij publicatie
 

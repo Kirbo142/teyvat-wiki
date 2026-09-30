@@ -15,13 +15,13 @@ Milan Smit 97129336
 Projectplan: Genshin Impact-wiki
 
 Wij gaan samen een wiki maken over Genshin Impact en de wereld van Teyvat. Wij vinden de wereld, de personages en de verhalen erg interessant. Met dit project willen wij alles overzichtelijk verzamelen op één plek. Wij gebruiken HTML voor de structuur, CSS voor de opmaak en JavaScript voor de interactiviteit, zoals zoeken en filteren.
-
+in deze sprint gaan we een wireframe maaken en een begin aan de website 
 
 
 ### Randvoorwaarden bij publicatie:
 
-AVG: die is niet van toepassing, want wij gebruiken en bewaren geen persoonsgegevens.
-Copyright: dit is wel relevant, en wel op twee manieren:
+
+Copyright: dit is  relevant, en wel op twee manieren:
 Onze eigen teksten en code zijn ons werk. Wij zetten onze namen erachter en willen niet dat anderen ze zomaar volledig kopiëren.
 Afbeeldingen, muziek, namen en andere content uit het spel zijn eigendom van HoYoverse, dus die kunnen wij niet zomaar gebruiken. Wij schrijven daarom onze eigen teksten, vermelden duidelijk dat dit een fanproject is en geen officiële website, en zijn voorzichtig met het overnemen van officiële afbeeldingen.
 

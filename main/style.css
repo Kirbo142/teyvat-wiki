@@ -1,0 +1,115 @@
+/* ===== EDIT HERE: page background color ===== */
+:root { --bg: #fef9ed; }
+/* ============================================ */
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  --ink: #2f2a22;
+  --muted: #6b6254;
+}
+html { background: var(--bg); }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+*, *::before, *::after { box-sizing: inherit; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+main { max-width: 720px; margin: 0 auto; padding: 24px 20px 56px; }
+.header-img {
+  display: block;
+  width: 100%;
+  height: var(--header-height);
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: 50% 25%;
+  border-radius: 0;
+}
+/* ===== EDIT HERE: how dark the header image is (0 = none, 1 = black) ===== */
+:root { --header-dim: 0.6; }
+/* ===== EDIT HERE: header height ===== */
+:root { --header-height: 300px; }
+.hero { position: relative; overflow: hidden; }
+.hero::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: rgba(0, 0, 0, var(--header-dim));
+}
+.header-img { filter: saturate(.75); }
+.hero h1 {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0; padding: 0 20px;
+  font-size: 3.2rem; line-height: 1.1; font-weight: 700;
+  color: #fffaf0; text-align: center;
+  text-shadow: 0 2px 14px rgba(0,0,0,.6);
+}
+p.intro { margin: 0 0 32px; color: var(--muted); font-size: 1.1rem; max-width: 60ch; }
+nav { display: flex; flex-direction: column; gap: 10px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; }
+nav a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 160px;
+  width: 160px;
+  min-height: 48px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: var(--c);
+  color: #fffaf0;
+  font: 600 0.95rem/1.2 system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: filter .15s;
+}
+nav a span { position: relative; z-index: 1; }
+/* Element symbol in the middle of a button (image is set per button at the bottom) */
+nav a::before {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 60px; height: 60px;
+  transform: translate(-50%, -50%);
+  background: var(--icon) center / contain no-repeat;
+  opacity: .3;
+  pointer-events: none;
+}
+nav a span { text-shadow: 0 1px 3px rgba(0,0,0,.35); }
+nav a:hover { filter: brightness(.88); }
+nav a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+/* Big buttons */
+.big a {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  padding: 34px 20px;
+  font-size: 1.4rem;
+}
+/* Button colors: change --c on any button */
+.b1 { --c: #3d5a45; }
+.b2 { --c: #4a5f8a; }
+.b3 { --c: #2a8c82; } /* Mondstadt - Anemo */
+.b4 { --c: #9a6f1c; } /* Liyue - Geo */
+.b5 { --c: #7b4fb0; } /* Inazuma - Electro */
+.b6 { --c: #4c7f2a; } /* Sumeru - Dendro */
+.b7 { --c: #c2571f; } /* Natlan - Pyro */
+.b8 { --c: #357f9e; } /* Snezhnaya - Cryo */
+.b9 { --c: #7d6a45; } /* Nod-Krai */
+@media (max-width: 480px) {
+  :root { --header-height: 220px; }
+  .hero h1 { font-size: 2.3rem; }
+}
+/* ===== Button icons (files in the images folder) ===== */
+.b3 { --icon: url("images/anemo.png"); }
+.b4 { --icon: url("images/geo.png"); }
+.b5 { --icon: url("images/electro.png"); }
+.b6 { --icon: url("images/dendro.png"); }
+.b7 { --icon: url("images/pyro.png"); }
+.b8 { --icon: url("images/cryo.png"); }
+.b9 { --icon: url("images/nodkrai.png"); }

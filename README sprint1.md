@@ -18,7 +18,7 @@ Wij gaan samen een wiki maken over Genshin Impact en de wereld van Teyvat. Wij v
 
 
 
-Randvoorwaarden bij publicatie:
+### Randvoorwaarden bij publicatie:
 
 AVG: die is niet van toepassing, want wij gebruiken en bewaren geen persoonsgegevens.
 Copyright: dit is wel relevant, en wel op twee manieren:
@@ -27,7 +27,7 @@ Afbeeldingen, muziek, namen en andere content uit het spel zijn eigendom van HoY
 
 
 
-Planning
+### Planning
 
 Startdatum: 30-09-2026
 Einddatum: 07-10-2026
@@ -35,7 +35,11 @@ Leerdoelen
 
 
 
-Onze leerdoelen voor dit project zijn:
+### Onze leerdoelen voor dit project zijn:
+de Leerdoelen voor milan is een wireframe te maken en daarmee verder te werken.
+en voor ons bijde is.
+Leren om dingen te plannen in een groep, omdat wij dit project samen doen.
+Kerntaken / werkprocessen
 
 Dit project hoort bij werkproces 
 

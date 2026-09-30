@@ -3,9 +3,7 @@ studentgegevens:
 Simon Haverhoek 97100084
 
 Milan Smit 97129336
-projectgegevens:
 
-Projectgegevens
 
 
 
@@ -14,13 +12,6 @@ Projectomschrijving
 Wij gaan samen een wiki maken over Genshin Impact en de wereld van Teyvat. Wij vinden de wereld, de personages en de verhalen erg interessant. Met dit project willen wij alles overzichtelijk verzamelen op één plek. Wij gebruiken HTML voor de structuur, CSS voor de opmaak en JavaScript voor de interactiviteit, zoals zoeken en filteren.
 
 Randvoorwaarden bij publicatie
-
-
-
-AVG: 
-
-Die is niet van toepassing, want wij gebruiken en bewaren geen persoonsgegevens.
-
 
 
 Copyright: 

@@ -3,11 +3,11 @@ body {
     background-color: #fef9ed;
 }
 
-/* Header  */
-.weapon-header {
+/* header */
+.character-header {
     width: 100%;
     height: 275px;
-    background-image: url("weaponpage.jpg");
+    background-image: url("characterpage.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -15,14 +15,14 @@ body {
     align-items: center;
 }
 
-.weapon-header h1 {
+.character-header h1 {
     color: white;
     font-size: 50px;
     text-shadow: 2px 2px 5px black;
 }
 
-/* the main section  */
-.weapon-section {
+/* main section */
+.character-section {
     padding: 40px 60px;
 }
 
@@ -38,14 +38,14 @@ body {
     font-size: 32px;
 }
 
-.weapon-preview {
+.character-preview {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 25px;
 }
 
-/* weapon cards*/
-.weapon-card {
+/* character cards */
+.character-card {
     background-color: white;
     width: 240px;
     border-radius: 12px;
@@ -54,36 +54,36 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.weapon-card:hover {
+.character-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.weapon-card img {
+.character-card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
     display: block;
     background-color: #ddd;
 }
 
-.weapon-info {
+.character-info {
     padding: 15px 20px 20px;
 }
 
-.weapon-info h3 {
+.character-info h3 {
     margin: 0 0 8px;
 }
 
-.weapon-info p {
+.character-info p {
     margin: 0;
     font-size: 14px;
     line-height: 1.5;
     color: #444;
 }
 
-/* cards width based on ammount of width in row */
-.weapon-preview .weapon-card {
+/* cards fill the entire collom */
+.character-preview .character-card {
     width: auto;
 }
 
@@ -105,8 +105,8 @@ body {
     transform: scale(1.05);
 }
 
-/* popupwindows with the weapon cards */
-.weapon-popup {
+/* the popup screen to see all cards */
+.character-popup {
     display: none;
     position: fixed;
     z-index: 10;
@@ -145,7 +145,7 @@ body {
     color: #4a6741;
 }
 
-.weapon-cards {
+.character-cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -157,25 +157,25 @@ body {
     to   { opacity: 1; }
 }
 
-/* ---------- Smaller screens ---------- */
-@media (max-width: 1100px) {
-    .weapon-preview {
-        grid-template-columns: repeat(3, 1fr);
+/*  Smaller screens  */
+@media (max-width: 1200px) {
+    .character-preview {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 800px) {
-    .weapon-section {
+    .character-section {
         padding: 30px 20px;
     }
 
-    .weapon-preview {
+    .character-preview {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 500px) {
-    .weapon-preview {
+    .character-preview {
         grid-template-columns: 1fr;
     }
 }

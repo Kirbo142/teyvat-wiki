@@ -1,0 +1,153 @@
+/* ===== EDIT HERE: page background color ===== */
+:root { --bg: #fef9ed; }
+/* ============================================ */
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  --ink: #2f2a22;
+  --muted: #6b6254;
+}
+html { background: var(--bg); }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+*, *::before, *::after { box-sizing: inherit; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+main { max-width: 720px; margin: 0 auto; padding: 24px 20px 56px; }
+.header-img {
+  display: block;
+  width: 100%;
+  height: var(--header-height);
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: 50% 25%;
+  border-radius: 0;
+}
+/* ===== EDIT HERE: how dark the header image is (0 = none, 1 = black) ===== */
+:root { --header-dim: 0.6; }
+/* ===== EDIT HERE: header height ===== */
+:root { --header-height: 300px; }
+/* ===== EDIT HERE: height of the picture on top of the region buttons ===== */
+:root { --photo-h: 78px; }
+.hero { position: relative; overflow: hidden; }
+.hero::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: rgba(0, 0, 0, var(--header-dim));
+}
+.header-img { filter: saturate(.75); }
+.hero h1 {
+  position: absolute; inset: 0; z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0; padding: 0 20px;
+  font-size: 3.2rem; line-height: 1.1; font-weight: 700;
+  color: #fffaf0; text-align: center;
+  text-shadow: 0 2px 14px rgba(0,0,0,.6);
+}
+main h1 { font-size: 2.4rem; line-height: 1.15; margin: 8px 0 12px; font-weight: 700; }
+main h2 { font-size: 1.5rem; line-height: 1.2; margin: 28px 0 4px; font-weight: 700; }
+main h2::first-letter { text-transform: uppercase; }
+.Welcome, p.intro { margin: 0 0 8px; color: var(--muted); font-size: 1.1rem; max-width: 60ch; }
+nav { display: flex; flex-direction: column; gap: 10px; }
+.row, nav > div { display: flex; flex-wrap: wrap; gap: 10px; }
+nav a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 0 0 160px;
+  width: 160px;
+  height: 124px;
+  padding: 6px 12px 24px;
+  border-radius: 22px;
+  --photo: none;
+  /* picture on top, fading down into the button color */
+  background:
+    linear-gradient(180deg, transparent 0, transparent calc(var(--photo-h) * .3), var(--c) var(--photo-h)),
+    var(--photo) top center / 100% var(--photo-h) no-repeat,
+    var(--c);
+  color: #fffaf0;
+  font: 600 0.9rem/1.15 system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: filter .15s;
+}
+nav a span { position: relative; z-index: 1; }
+nav a span::first-letter { text-transform: uppercase; }
+/* Element symbol in the middle of a button (image is set per button at the bottom) */
+nav a::before {
+  content: "";
+  position: absolute;
+  left: 50%; bottom: 3px;
+  width: 60px; height: 60px;
+  transform: translateX(-50%);
+  background: var(--icon) center / contain no-repeat;
+  opacity: .3;
+  pointer-events: none;
+}
+nav a span { text-shadow: 0 1px 3px rgba(0,0,0,.35); }
+nav a:hover { filter: brightness(.88); }
+nav a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+/* Big buttons */
+.big a {
+  border-radius: 999px;
+  background: var(--c);
+  display: block;
+  height: auto;
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  padding: 34px 20px;
+  font-size: 1.4rem;
+}
+.big a::first-letter { text-transform: uppercase; }
+/* Button colors: change --c on any button */
+.b1 { --c: #3d5a45; }
+.b2 { --c: #4a5f8a; }
+.b3 { --c: #2a8c82; } /* Mondstadt - Anemo */
+.b4 { --c: #9a6f1c; } /* Liyue - Geo */
+.b5 { --c: #7b4fb0; } /* Inazuma - Electro */
+.b6 { --c: #4c7f2a; } /* Sumeru - Dendro */
+.b7 { --c: #c2571f; } /* Natlan - Pyro */
+.b8 { --c: #357f9e; } /* Snezhnaya - Cryo */
+.b9 { --c: #7d6a45; } /* Nod-Krai */
+.b10 { --c: #3d3f8f; } /* Temple of Space */
+.b11 { --c: #7a5a2a; } /* The Chasm */
+.b12 { --c: #2d5f8a; } /* Enkanomiya */
+.b13 { --c: #1f4f6f; } /* Sea of Bygone Eras */
+.b14 { --c: #5f6f56; } /* Ancient Sacred Mountain */
+.b15 { --c: #4a7f9e; } /* Frost Moon */
+@media (max-width: 480px) {
+  :root { --header-height: 220px; }
+  .hero h1 { font-size: 2.3rem; }
+}
+/* ===== Button icons (files in the images folder) ===== */
+.b3 { --icon: url("images/anemo.png"); }
+.b4 { --icon: url("images/geo.png"); }
+.b5 { --icon: url("images/electro.png"); }
+.b6 { --icon: url("images/dendro.png"); }
+.b7 { --icon: url("images/pyro.png"); }
+.b8 { --icon: url("images/cryo.png"); }
+.b9 { --icon: url("images/nodkrai.png"); }
+/* Icons for the places: add an image to the images folder, then uncomment, e.g.
+.b10 { --icon: url("images/temple-of-space.png"); }
+*/
+/* ===== Region pictures: a picture on top of the button that fades into the button color =====
+   1. Put a small picture (about 640x300, jpg) in the images folder.
+   2. Copy its line below out of the comment block (delete the opening and closing
+      comment marks around the lines you use). The name must match the file. */
+/* Active region pictures */
+.b3  { --photo: url("images/mondstadt.jpg"); }
+.b4  { --photo: url("images/liyue.jpg"); }
+.b5  { --photo: url("images/inazuma.jpg"); }
+.b6  { --photo: url("images/sumeru.jpg"); }
+.b7  { --photo: url("images/natlan.jpg"); }
+.b8  { --photo: url("images/snezhnaya.jpg"); }
+.b9  { --photo: url("images/nod-krai.jpg"); }
+

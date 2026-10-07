@@ -144,18 +144,10 @@ nav a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
       comment marks around the lines you use). The name must match the file. */
 /* Active region pictures */
 .b3  { --photo: url("images/mondstadt.jpg"); }
-
-/* Still to add (copy a line out of the comment when you have the picture)
 .b4  { --photo: url("images/liyue.jpg"); }
 .b5  { --photo: url("images/inazuma.jpg"); }
 .b6  { --photo: url("images/sumeru.jpg"); }
 .b7  { --photo: url("images/natlan.jpg"); }
 .b8  { --photo: url("images/snezhnaya.jpg"); }
 .b9  { --photo: url("images/nod-krai.jpg"); }
-.b10 { --photo: url("images/temple-of-space.jpg"); }
-.b11 { --photo: url("images/the-chasm.jpg"); }
-.b12 { --photo: url("images/enkanomiya.jpg"); }
-.b13 { --photo: url("images/sea-of-bygone-eras.jpg"); }
-.b14 { --photo: url("images/ancient-sacred-mountain.jpg"); }
-.b15 { --photo: url("images/frost-moon.jpg"); }
-*/
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mondstadt - Teyvat Wiki</title>
+<link rel="stylesheet" href="../css/region.css">
+<style>
+  /* Keep the lore card compact while allowing its contents to scroll. */
+  .card.lore .lore-scroll {
+    max-height: 360px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 0.75rem 0 0.1rem;
+    scrollbar-gutter: stable;
+    overscroll-behavior: contain;
+  }
+  .card.lore .lore-scroll p {
+    white-space: pre-line;
+    line-height: 1.6;
+  }
+  .card.lore .lore-scroll:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body class="theme-mondstadt">
+
+<header class="region-header">
+  <a class="back-home" href="../index.html">&larr; Home</a>
+  <h1>Mondstadt</h1>
+  <p>The city of freedom</p>
+</header>
+
+<main class="grid">
+
+  <section class="card quests">
+    <h2>Quests</h2>
+    <div class="filters" role="group" aria-label="Filter quests">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="archon">Archon</button>
+      <button class="chip" data-filter="world">World</button>
+      <button class="chip" data-filter="story">Story</button>
+    </div>
+    <ul class="list scroll">
+      <li data-type="archon"><span class="tag archon">Archon Quest</span><p>Prologue, Act I: The Outlander Who Caught the Wind</p><p class="how">The story begins. Complete Wanderer's Trail first.</p></li>
+      <li data-type="archon"><span class="tag archon">Archon Quest</span><p>Prologue, Act II: For a Tomorrow Without Tears</p><p class="how">Follows Act I.</p></li>
+      <li data-type="archon"><span class="tag archon">Archon Quest</span><p>Prologue, Act III: Song of the Dragon and Freedom</p><p class="how">Follows Act II. Ends the Mondstadt chapter.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>After the Storm</p><p class="how">Talk to Wagner, the swordsmith in Mondstadt.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Ah, Fresh Meat!</p><p class="how">Finish In the Mountains, then talk to Harris in Dragonspine.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>A Land Entombed</p><p class="how">Find the three Ancient Investigation Journals in Dragonspine.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Break the Sword Cemetery Seal</p><p class="how">Talk to Dr. Livingstone in Dadaupa Gorge.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Equivalent Exchange</p><p class="how">Talk to Viktor at the Cathedral.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Flighty Flora... and Flora</p><p class="how">Talk to Flora in Mondstadt.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>In the Aftermath</p><p class="how">Talk to Huffman.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Lost in the Snow</p><p class="how">Talk to Joel in Dragonspine.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Mondstadt and Its Archon</p><p class="how">Finish Venti's story quest (Carmen Dei, Act I), then talk to Grace by the Cathedral in the daytime.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Question &amp; Answer</p><p class="how">Talk to Swan at the Mondstadt entrance.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Time and Wind</p><p class="how">Talk to Esther in the north of Wyrmrest Valley.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Thief-Catcher</p><p class="how">Talk to Cyrus in Mondstadt.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>The Great Mountain Survey I</p><p class="how">Talk to Esther in the north of Wyrmrest Valley.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>The Great Mountain Survey II</p><p class="how">Talk to Esther in the north of Wyrmrest Valley.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Bough Keeper</p><p class="how">Talk to Katheryne in Mondstadt.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Collector of Anemo Sigils</p><p class="how">Talk to Marjorie once you reach Adventure Rank 9.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Every Day a New Adventure</p><p class="how">Talk to Katheryne in Mondstadt.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Lianne's Troubles</p><p class="how">Talk to Lianne at Wolvendom.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Exploding Population</p><p class="how">Unlock your own Serenitea Pot first.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Low-Temperature Warning</p><p class="how">Talk to Iris at Dragonspine Camp.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Scent on the Wind</p><p class="how">Visit the restaurant in Mondstadt after finishing Prologue, Act I.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Solo Venture</p><p class="how">Talk to Jack in Mondstadt.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Wisdom of Ancient Civilizations</p><p class="how">Talk to Timaeus in Mondstadt.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>Sharpening the Axe Won't Hinder the Work</p><p class="how">Talk to Wagner in Mondstadt.</p></li>
+      <li data-type="world"><span class="tag world">World Quest</span><p>When the Trail Goes Cold</p><p class="how">Talk to Katheryne, then to Iris at Windwail Highland in Dragonspine.</p></li>
+      <li data-type="story"><span class="tag story">Story Quest</span><p>Carmen Dei, Act I</p><p class="how">Venti's story quest.</p></li>
+      <li data-type="story"><span class="tag story">Story Quest</span><p>Glide with the Wind</p><p class="how">Amber's story quest. Talk to Amber outside the Cathedral at Adventure Rank 8.</p></li>
+      <li data-type="story"><span class="tag story">Story Quest</span><p>License to Glide</p><p class="how">Amber's story quest.</p></li>
+      <li data-type="story"><span class="tag story">Story Quest</span><p>Mondstadt Glider</p><p class="how">Amber's story quest.</p></li>
+      <li data-type="story"><span class="tag story">Story Quest</span><p>They Call Him Raptor</p><p class="how">Amber's story quest.</p></li>
+      <li data-type="story"><span class="tag story">Story Quest</span><p>Outrider Style</p><p class="how">Amber's story quest.</p></li>
+    </ul>
+  </section>
+
+  <section class="card lore">
+    <h2>Lore of Mondstadt</h2>
+    <div class="lore-scroll" tabindex="0" role="region" aria-label="Scrollable lore of Mondstadt">
+    <p>
+1. The Era of Storms (2,600+ Years Ago)
+
+• The Tyrant's Rule: Old Mondstadt (now Stormterror's Lair) was ruled by Decarabian, the God of Storms. He encased the city in a fierce wind barrier to "protect" his people, though it actually trapped them.
+• The Rebellion: A nameless bard, a tiny wind spirit (Barbatos), the knight Amos, and a red-haired warrior led a revolution to overthrow Decarabian.
+• The Sacrifice: The bard died in the battle. Barbatos absorbed the wind god's power, ascended to godhood, and took the form of the deceased bard to honor him.
+    </p>
+    <p>
+2. The Golden Age of Freedom
+
+• Reshaping the Land: Barbatos (now Venti) blew away the snow and ice with his winds, flattened the mountains, and founded modern Mondstadt on an island in a lake.
+• The Divine Departure: Venti refused to rule as a tyrant. He declared Mondstadt the "Nation of Freedom" and left the humans to govern themselves, stepping into the shadows.
+</p>
+    <p>
+3. The Aristocracy & Rebellion (1,000 Years Ago)
+
+• The Corruption: In the Archon's absence, the Lawrence Clan and other nobles enslaved the common folk and gladiators.
+• The Return: Venti awoke to find his city in chains. He teamed up with Vennessa, a slave gladiator.
+• The New Order: Together, they overthrew the aristocracy. Vennessa founded the Knights of Favonius to protect the city and later ascended to Celestia as a hawk (the Falcon of the West).
+</p>
+    <p>
+4. The Cataclysm & The Dragon (500 Years Ago)
+
+• The Shadow Invasion: The alchemist Gold created mutated monsters in Khaenri'ah that attacked Teyvat. The corrupted dragon Durin assaulted Mondstadt.
+• The Battle of Dragonspine: Venti and his loyal dragon, Dvalin (Stormterror), defeated Durin. Durin's venomous blood seeped into Dragonspine, while Dvalin was deeply poisoned during the fight and fell into a long, agonizing slumber.
+</p>
+    <p>
+5. Present Day
+
+• Stormterror's Return: Dvalin woke up corrupted by his poison and manipulated by the Abyss Order. He began attacking Mondstadt out of a sense of betrayal.
+• The Traveler's Arrival: The Traveler arrived, teamed up with the Knights of Favonius, Jean, Diluc, and Venti to purify Dvalin, saving Mondstadt and restoring the Dragon of the East to freedom</p>
+</p>
+    </div>
+  </section>
+
+</main>
+
+<section class="map-full" data-max-zoom="3" data-fit="contain" aria-label="Map of Mondstadt">
+  <img src="../images/mondstadt-map.jpg" alt="Map of Mondstadt">
+  <span class="map-title">Map of Mondstadt</span>
+  <div class="map-tools">
+    <button data-zoom="out" aria-label="Zoom out">&minus;</button>
+    <button data-zoom="in" aria-label="Zoom in">+</button>
+    <button data-zoom="reset" aria-label="Reset the map">Reset</button>
+  </div>
+  <span class="map-hint">Drag to move. Ctrl + scroll or double-click to zoom.</span>
+  <a class="map-link" href="https://act.hoyolab.com/ys/app/interactive-map/index.html" target="_blank" rel="noopener">Open the interactive map</a>
+</section>
+
+<main class="grid">
+
+  <section class="card collectibles">
+    <h2>Collectibles</h2>
+    <ul class="list scroll">
+      <li><div><h3>Anemoculus</h3><p>66 can be found around Mondstadt. 65 are enough to max out the Statues of the Seven.</p></div><span class="count">66</span></li>
+      <li><div><h3>Calla Lily</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Cecilia</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Dandelion Seed</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Philanemo Mushroom</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Small Lamp Grass</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Valberry</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Windwheel Aster</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Wolfhook</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+    </ul>
+  </section>
+
+  <section class="card characters">
+    <h2>Characters</h2>
+    <ul class="portraits">
+      <li><img class="avatar" src="../images/characters/albedo.png" alt="Albedo">Albedo</li>
+      <li><img class="avatar" src="../images/characters/amber.png" alt="Amber">Amber</li>
+      <li><img class="avatar" src="../images/characters/barbara.png" alt="Barbara">Barbara</li>
+      <li><img class="avatar" src="../images/characters/bennett.png" alt="Bennett">Bennett</li>
+      <li><img class="avatar" src="../images/characters/diluc.png" alt="Diluc">Diluc</li>
+      <li><img class="avatar" src="../images/characters/diona.png" alt="Diona">Diona</li>
+      <li><img class="avatar" src="../images/characters/eula.png" alt="Eula">Eula</li>
+      <li><img class="avatar" src="../images/characters/fischl.png" alt="Fischl">Fischl</li>
+      <li><img class="avatar" src="../images/characters/jean.png" alt="Jean">Jean</li>
+      <li><img class="avatar" src="../images/characters/kaeya.png" alt="Kaeya">Kaeya</li>
+      <li><img class="avatar" src="../images/characters/klee.png" alt="Klee">Klee</li>
+      <li><img class="avatar" src="../images/characters/lisa.png" alt="Lisa">Lisa</li>
+      <li><img class="avatar" src="../images/characters/mona.png" alt="Mona">Mona</li>
+      <li><img class="avatar" src="../images/characters/noelle.png" alt="Noelle">Noelle</li>
+      <li><img class="avatar" src="../images/characters/razor.png" alt="Razor">Razor</li>
+      <li><img class="avatar" src="../images/characters/rosaria.png" alt="Rosaria">Rosaria</li>
+      <li><img class="avatar" src="../images/characters/sucrose.png" alt="Sucrose">Sucrose</li>
+      <li><img class="avatar" src="../images/characters/traveler.png" alt="Traveler">Traveler</li>
+      <li><img class="avatar" src="../images/characters/venti.png" alt="Venti">Venti</li>
+      <li><img class="avatar" src="../images/characters/lohen.png" alt="lohen">lohen</li>
+      <li><img class="avatar" src="../images/characters/prune.png" alt="prune">prune</li>
+      <li><img class="avatar" src="../images/characters/varka.png" alt="varka">varka</li>
+      <li><img class="avatar" src="../images/characters/durin.png" alt="durin">durin</li>
+    </ul>
+  </section>
+
+  <section class="card shops">
+    <h2>Shops in Mondstadt</h2>
+    <ul class="list scroll">
+      <li><h3>Marjorie, With Wind Comes Glory</h3><p>the souvenier shop</p></li>
+      <li><h3>Blanche, Mondstadt General Goods</h3><p>the general goods shop</p></li>
+      <li><h3>Sara, Good Hunter</h3><p>the hunting gear shop</p></li>
+      <li><h3>Wagner, Blacksmith</h3><p>the blacksmith shop</p></li>
+      <li><h3>Schulz, Smiths Apprentice</h3><p>the little apprentice smith shop</p></li>
+      <li><h3>Flora, Floral Whisper </h3><p>the floral shop</p></li>
+      <li><h3>Nantuck, Mondstadt Angler</h3><p>the fishing shop</p></li>
+      <li><h3>Shiliu, Jeweler</h3><p>the jeweler shop</p></li>
+      <li><h3>Charles, Bartender</h3><p>the bartender shop</p></li>
+      <li><h3>Brook, Chef</h3><p>the recipe shop</p></li>
+      <li><h3>Draff, Head of the Hunters</h3><p>the restaurant</p></li>
+      <li><h3>Chloris, Botanist</h3><p>the botanist shop</p></li>
+      <li><h3>Hopkins the Marvelous </h3><p>the holy water guy</p></li>
+      <li><h3>Goth, Boss of the Goth Grand Hotel</h3><p>the grand hotel</p></li>
+    
+    </ul>
+  </section>
+
+</main>
+
+<script src="../js/region.js"></script>
+</body>
+</html>

@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mondstadt - Teyvat Wiki</title>
 <link rel="stylesheet" href="../css/region.css">
+<style>
+  /* Keep the lore card compact while allowing its contents to scroll. */
+  .card.lore .lore-scroll {
+    max-height: 360px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 0.75rem 0 0.1rem;
+    scrollbar-gutter: stable;
+    overscroll-behavior: contain;
+  }
+  .card.lore .lore-scroll p {
+    white-space: pre-line;
+    line-height: 1.6;
+  }
+  .card.lore .lore-scroll:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+</style>
 </head>
 <body class="theme-mondstadt">
 
@@ -64,7 +83,40 @@
 
   <section class="card lore">
     <h2>Lore of Mondstadt</h2>
-    <p>Write the lore about the area here, in your own words.</p>
+    <div class="lore-scroll" tabindex="0" role="region" aria-label="Scrollable lore of Mondstadt">
+    <p>
+1. The Era of Storms (2,600+ Years Ago)
+
+• The Tyrant's Rule: Old Mondstadt (now Stormterror's Lair) was ruled by Decarabian, the God of Storms. He encased the city in a fierce wind barrier to "protect" his people, though it actually trapped them.
+• The Rebellion: A nameless bard, a tiny wind spirit (Barbatos), the knight Amos, and a red-haired warrior led a revolution to overthrow Decarabian.
+• The Sacrifice: The bard died in the battle. Barbatos absorbed the wind god's power, ascended to godhood, and took the form of the deceased bard to honor him.
+    </p>
+    <p>
+2. The Golden Age of Freedom
+
+• Reshaping the Land: Barbatos (now Venti) blew away the snow and ice with his winds, flattened the mountains, and founded modern Mondstadt on an island in a lake.
+• The Divine Departure: Venti refused to rule as a tyrant. He declared Mondstadt the "Nation of Freedom" and left the humans to govern themselves, stepping into the shadows.
+</p>
+    <p>
+3. The Aristocracy & Rebellion (1,000 Years Ago)
+
+• The Corruption: In the Archon's absence, the Lawrence Clan and other nobles enslaved the common folk and gladiators.
+• The Return: Venti awoke to find his city in chains. He teamed up with Vennessa, a slave gladiator.
+• The New Order: Together, they overthrew the aristocracy. Vennessa founded the Knights of Favonius to protect the city and later ascended to Celestia as a hawk (the Falcon of the West).
+</p>
+    <p>
+4. The Cataclysm & The Dragon (500 Years Ago)
+
+• The Shadow Invasion: The alchemist Gold created mutated monsters in Khaenri'ah that attacked Teyvat. The corrupted dragon Durin assaulted Mondstadt.
+• The Battle of Dragonspine: Venti and his loyal dragon, Dvalin (Stormterror), defeated Durin. Durin's venomous blood seeped into Dragonspine, while Dvalin was deeply poisoned during the fight and fell into a long, agonizing slumber.
+</p>
+    <p>
+5. Present Day
+
+• Stormterror's Return: Dvalin woke up corrupted by his poison and manipulated by the Abyss Order. He began attacking Mondstadt out of a sense of betrayal.
+• The Traveler's Arrival: The Traveler arrived, teamed up with the Knights of Favonius, Jean, Diluc, and Venti to purify Dvalin, saving Mondstadt and restoring the Dragon of the East to freedom</p>
+</p>
+    </div>
   </section>
 
 </main>
@@ -130,10 +182,21 @@
   <section class="card shops">
     <h2>Shops in Mondstadt</h2>
     <ul class="list scroll">
-      <li><h3>Shop name</h3><p>Info about the shop.</p></li>
-      <li><h3>Shop name</h3><p>Info about the shop.</p></li>
-      <li><h3>Shop name</h3><p>Info about the shop.</p></li>
-      <li><h3>Shop name</h3><p>Info about the shop.</p></li>
+      <li><h3>Marjorie, With Wind Comes Glory</h3><p>the souvenier shop</p></li>
+      <li><h3>Blanche, Mondstadt General Goods</h3><p>the general goods shop</p></li>
+      <li><h3>Sara, Good Hunter</h3><p>the hunting gear shop</p></li>
+      <li><h3>Wagner, Blacksmith</h3><p>the blacksmith shop</p></li>
+      <li><h3>Schulz, Smiths Apprentice</h3><p>the little apprentice smith shop</p></li>
+      <li><h3>Flora, Floral Whisper </h3><p>the floral shop</p></li>
+      <li><h3>Nantuck, Mondstadt Angler</h3><p>the fishing shop</p></li>
+      <li><h3>Shiliu, Jeweler</h3><p>the jeweler shop</p></li>
+      <li><h3>Charles, Bartender</h3><p>the bartender shop</p></li>
+      <li><h3>Brook, Chef</h3><p>the recipe shop</p></li>
+      <li><h3>Draff, Head of the Hunters</h3><p>the restaurant</p></li>
+      <li><h3>Chloris, Botanist</h3><p>the botanist shop</p></li>
+      <li><h3>Hopkins the Marvelous </h3><p>the holy water guy</p></li>
+      <li><h3>Goth, Boss of the Goth Grand Hotel</h3><p>the grand hotel</p></li>
+    
     </ul>
   </section>
 

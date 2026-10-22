@@ -12,13 +12,21 @@
   --g1: #1a5f6a; --g2: #2a8c82; --g3: #3f9fb8;
   --glow1: rgba(150, 235, 200, .5); --glow2: rgba(120, 200, 255, .45);
   --icon: url("../images/anemo.png");
-  --map-bg: #0c0e14;   /* color around the map picture */
+  --map-bg: #0c0e14;  
 }
 .theme-inazuma {
   --accent: #7b4fb0;
   --g1: #40266f; --g2: #1d2561; --g3: #1b3a85;
   --glow1: rgba(160, 110, 230, .55); --glow2: rgba(60, 110, 220, .5);
   --icon: url("../images/electro.png");
+}
+
+.theme-sumeru {
+  --accent: #3ea446;
+  --g1: #58dd47; --g2: #1c5d5e; --g3: #7fdeac;
+  --glow1: rgba(48, 133, 45, 0.514); --glow2: rgba(72, 231, 112, 0.45);
+  --icon: url("../images/dendro.png");
+  --map-bg: #0c0e14;  
 }
 
 *, *::before, *::after { box-sizing: border-box; }

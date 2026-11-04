@@ -11,7 +11,7 @@
   .card.lore .lore-content { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-right: 0.35rem; }
 </style>
 </head>
-<body class="theme-sumeru">
+<body class="theme-sumeru" data-region="sumeru">
 
 <header class="region-header">
   <a class="back-home" href="../index.html">&larr; Home</a>
@@ -23,17 +23,8 @@
 
   <section class="card quests">
     <h2>Quests</h2>
-    <div class="filters" role="group" aria-label="Filter quests">
-      <button class="chip active" data-filter="all">All</button>
-      <button class="chip" data-filter="archon">Archon</button>
-      <button class="chip" data-filter="world">World</button>
-      <button class="chip" data-filter="story">Story</button>
-    </div>
-    <ul class="list scroll">
-      <li data-type="archon"><span class="tag archon">Archon Quest</span><p>chapter III, Act I:  Through Mists of Smoke and Forests Dark</p><p class="how">reach Adventure Rank 35 and complete Archon Quest Chapter II: Act IV - Requiem of the Echoing Depths.</p></li>
-      <li data-type="world"><span class="tag world">World Quest</span><p> Woodland Encounter</p><p class="how">Approach a Forest Ranger surrounded by Fungi west of Gandharva Ville.</p></li>
-      <li data-type="story"><span class="tag story">Story Quest</span><p>Vulpes Zerda Chapter</p><p class="how">Travel to Gandharva Ville in the Avidya Forest to meet and talk with Tighnari</p></li>
-    </ul>
+    <div class="filters" id="questFilters" role="group" aria-label="Filter quests"></div>
+    <ul class="list scroll" id="questList"></ul>
   </section>
 
   <section class="card lore">
@@ -79,7 +70,6 @@ This storyline reinforces an important rule of Teyvat: changing the world's memo
 Sumeru's desert contains ancient ruins and secrets about King Deshret's civilization. His people pursued advanced knowledge and technology, but forbidden knowledge ultimately brought destruction.
 
 The desert tribes and rainforest scholars have often been divided by prejudice and political power. Sumeru's story explores how knowledge can become dangerous when people pursue it without understanding its consequences.</p>
-</p>
     </div>
   </section>
 
@@ -102,29 +92,57 @@ The desert tribes and rainforest scholars have often been divided by prejudice a
   <section class="card collectibles">
     <h2>Collectibles</h2>
     <ul class="list scroll">
-      <li><div><h3>dendroculus</h3><p>270 can be found around Sumeru. 269 are enough to max out the Statues of the Seven.</p></div><span class="count">270</span></li>
-      <li><div><h3>Rukkhashava Mushrooms</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Dendroculus</h3><p>270 can be found around Sumeru. 269 are enough to max out the Statues of the Seven.</p></div><span class="count">270</span></li>
+      <li><div><h3>Henna Berry</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Kalpalata Lotus</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Mourning Flower</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Nilotpala Lotus</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Padisarah</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Rukkhashava Mushroom</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Sand Grease Pupa</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Scarab</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+      <li><div><h3>Trishiraite</h3><p>Local specialty.</p></div><span class="count soft">Specialty</span></li>
+    </ul>
   </section>
 
   <section class="card characters">
     <h2>Characters</h2>
     <ul class="portraits">
-      <li><img class="avatar" src="../images/characters/albedo.png" alt="Albedo">Albedo</li>
-    
+      <li><span class="avatar"></span>Alhaitham</li>
+      <li><span class="avatar"></span>Candace</li>
+      <li><span class="avatar"></span>Collei</li>
+      <li><span class="avatar"></span>Cyno</li>
+      <li><span class="avatar"></span>Dehya</li>
+      <li><span class="avatar"></span>Dori</li>
+      <li><span class="avatar"></span>Faruzan</li>
+      <li><span class="avatar"></span>Kaveh</li>
+      <li><span class="avatar"></span>Layla</li>
+      <li><span class="avatar"></span>Nahida</li>
+      <li><span class="avatar"></span>Nilou</li>
+      <li><span class="avatar"></span>Sethos</li>
+      <li><span class="avatar"></span>Tighnari</li>
+      <li><span class="avatar"></span>Wanderer</li>
+    </ul>
   </section>
 
   <section class="card shops">
     <h2>Shops in Sumeru</h2>
     <ul class="list scroll">
-      <li><h3>Shop name</h3><p>Info about the shop.</p></li>
-      <li><h3>Shop name</h3><p>Info about the shop.</p></li>
-      <li><h3>Shop name</h3><p>Info about the shop.</p></li>
-      <li><h3>Shop name</h3><p>Info about the shop.</p></li>
+      <li><h3>Effendi</h3><p>Major shop vendor in Sumeru City.</p></li>
+      <li><h3>Shamshir's Smithy</h3><p>Smithy in Sumeru City.</p></li>
+      <li><h3>Menakeri's Treasure Shop</h3><p>Sumeru City. Furnishings and blueprints.</p></li>
+      <li><h3>Babak</h3><p>Shop owner in Port Ormos. Sells Philanemo Mushroom, Dandelion Seed, Violetgrass, Qingxin, Naku Weed and Sango Pearl.</p></li>
+      <li><h3>Qiuwei</h3><p>Merchant in Port Ormos. Sells Crystal Chunk, Cor Lapis, Noctilucous Jade and Silk Flower.</p></li>
+      <li><h3>Lambad Tavern</h3><p>Lambad's tavern in Sumeru. Sells Sugar.</p></li>
+      <li><h3>Azalai</h3><p>Merchant in the Sumeru desert. Sells Sugar.</p></li>
+      <li><h3>Pam</h3><p>Hidden merchant in Sumeru. Sells shrimp meat.</p></li>
+      <li><h3>Aravinay</h3><p>Vanarana. Sells weapon blueprints. Buying all five earns the achievement The Tale of the Forest.</p></li>
     </ul>
   </section>
 
 </main>
 
+<script src="../data/sumeru.js"></script>
 <script src="../js/region.js"></script>
 </body>
 </html>

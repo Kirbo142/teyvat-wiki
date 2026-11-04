@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 // Filter quests by type
 document.querySelectorAll(".chip").forEach(function (chip) {
     chip.addEventListener("click", function () {
@@ -9,6 +10,64 @@ document.querySelectorAll(".chip").forEach(function (chip) {
         });
     });
 });
+=======
+// Quests: built from this page's data file (data/<region>.js)
+(function () {
+    var data = (window.WIKI_DATA || {})[document.body.dataset.region];
+    var list = document.getElementById("questList");
+    var bar = document.getElementById("questFilters");
+    if (!data || !list || !bar) return;
+
+    // type -> [filter button text, tag text]
+    var LABELS = {
+        archon: ["Archon", "Archon Quest"],
+        world: ["World", "World Quest"],
+        story: ["Story", "Story Quest"],
+        hangout: ["Hangout", "Hangout Event"]
+    };
+    function label(type, i) { return (LABELS[type] || [type, type])[i]; }
+
+    var types = ["all"];
+    data.quests.forEach(function (q) {
+        if (types.indexOf(q.type) < 0) types.push(q.type);
+
+        var li = document.createElement("li");
+        li.dataset.type = q.type;
+
+        var tag = document.createElement("span");
+        tag.className = "tag " + q.type;
+        tag.textContent = label(q.type, 1);
+        li.appendChild(tag);
+
+        var name = document.createElement("p");
+        name.textContent = q.name;
+        li.appendChild(name);
+
+        if (q.how) {
+            var how = document.createElement("p");
+            how.className = "how";
+            how.textContent = q.how;
+            li.appendChild(how);
+        }
+        list.appendChild(li);
+    });
+
+    // One filter button per quest type on this page
+    types.forEach(function (type) {
+        var chip = document.createElement("button");
+        chip.className = "chip" + (type === "all" ? " active" : "");
+        chip.textContent = type === "all" ? "All" : label(type, 0);
+        chip.addEventListener("click", function () {
+            bar.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("active"); });
+            chip.classList.add("active");
+            list.querySelectorAll("li").forEach(function (li) {
+                li.hidden = type !== "all" && li.dataset.type !== type;
+            });
+        });
+        bar.appendChild(chip);
+    });
+})();
+>>>>>>> Stashed changes
 
 // Map: zoom (buttons, Ctrl + scroll, double-click), drag to move
 (function () {

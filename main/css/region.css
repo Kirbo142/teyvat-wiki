@@ -12,7 +12,29 @@
   --g1: #1a5f6a; --g2: #2a8c82; --g3: #3f9fb8;
   --glow1: rgba(150, 235, 200, .5); --glow2: rgba(120, 200, 255, .45);
   --icon: url("../images/anemo.png");
+<<<<<<< Updated upstream
   --map-bg: #0c0e14;  
+=======
+  --map-bg: #0c0e14;   /* color around the map picture */
+}
+.theme-sumeru {
+  --accent: #4c7f2a;
+  --g1: #1f4a2c; --g2: #3d7a3a; --g3: #7a9a3a;
+  --glow1: rgba(190, 235, 130, .5); --glow2: rgba(240, 200, 110, .4);
+  --icon: url("../images/dendro.png");
+}
+.theme-fontaine {
+  --accent: #2f6fb5;
+  --g1: #12356b; --g2: #1f5fa8; --g3: #3fa0d0;
+  --glow1: rgba(150, 215, 255, .5); --glow2: rgba(90, 150, 240, .45);
+  --icon: url("../images/hydro.png");
+}
+.theme-temple-of-space {
+  --accent: #3d3f8f;
+  --g1: #141943; --g2: #2b2f78; --g3: #4b4fa8;
+  --glow1: rgba(150, 165, 255, .5); --glow2: rgba(120, 90, 220, .45);
+  --icon: url("../images/anemo.png");
+>>>>>>> Stashed changes
 }
 .theme-inazuma {
   --accent: #7b4fb0;
@@ -21,6 +43,7 @@
   --icon: url("../images/electro.png");
 }
 
+<<<<<<< Updated upstream
 .theme-sumeru {
   --accent: #3ea446;
   --g1: #58dd47; --g2: #1c5d5e; --g3: #7fdeac;
@@ -29,6 +52,8 @@
   --map-bg: #0c0e14;  
 }
 
+=======
+>>>>>>> Stashed changes
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia, "Times New Roman", serif; line-height: 1.6; }
 
@@ -96,6 +121,15 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia
 .map-full + .grid { padding-top: 48px; grid-template-columns: repeat(2, 1fr); }
 .characters { grid-column: 1 / -1; order: 3; }
 .lore p { max-width: 62ch; font-size: 1.1rem; margin: 0; color: var(--muted); }
+<<<<<<< Updated upstream
+=======
+.card.lore { display: flex; flex-direction: column; max-height: 480px; overflow: hidden; }
+.card.lore > h2 { flex: 0 0 auto; }
+.lore-content { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-right: 14px; scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
+.lore-content p { max-width: 70ch; margin: 0 0 .6rem; font-size: 1.05rem; }
+.lore-content h3 { margin: 1.1rem 0 .2rem; font-size: 1.1rem; }
+.lore-content .spoiler { margin: 0 0 .4rem; font-size: .9rem; font-style: italic; }
+>>>>>>> Stashed changes
 
 .list { list-style: none; margin: 0; padding: 0; }
 .list li { padding: 14px 0; border-bottom: 1px solid #eee7da; }

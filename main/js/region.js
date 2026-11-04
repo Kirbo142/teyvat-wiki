@@ -1,16 +1,3 @@
-<<<<<<< Updated upstream
-// Filter quests by type
-document.querySelectorAll(".chip").forEach(function (chip) {
-    chip.addEventListener("click", function () {
-        document.querySelectorAll(".chip").forEach(function (c) { c.classList.remove("active"); });
-        chip.classList.add("active");
-        var type = chip.dataset.filter;
-        document.querySelectorAll(".quests li").forEach(function (li) {
-            li.hidden = type !== "all" && li.dataset.type !== type;
-        });
-    });
-});
-=======
 // Quests: built from this page's data file (data/<region>.js)
 (function () {
     var data = (window.WIKI_DATA || {})[document.body.dataset.region];
@@ -67,7 +54,6 @@ document.querySelectorAll(".chip").forEach(function (chip) {
         bar.appendChild(chip);
     });
 })();
->>>>>>> Stashed changes
 
 // Map: zoom (buttons, Ctrl + scroll, double-click), drag to move
 (function () {

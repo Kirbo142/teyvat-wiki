@@ -98,5 +98,24 @@ window.WIKI_DATA.inazuma = {
     { type: "world", name: "Neko Is a Cat: The Cat's Trail", how: "Talk to Neko at Asase Shrine." },
     { type: "world", name: "Neko Is a Cat: The Children", how: "Talk to Neko at Asase Shrine." },
     { type: "world", name: "Neko Is a Cat: Wooden Shelf", how: "Talk to Neko at Asase Shrine." },
+  ],
+  // Characters. The picture is images/characters/<name>.png. A missing picture shows a round placeholder.
+  characters: [
+    { name: "arataki-itto", displayName: "Arataki Itto" },
+    { name: "gorou", displayName: "Gorou" },
+    { name: "kaedehara-kazuha", displayName: "Kaedehara Kazuha" },
+    { name: "kamisato-ayaka", displayName: "Kamisato Ayaka" },
+    { name: "kamisato-ayato", displayName: "Kamisato Ayato" },
+    { name: "kirara", displayName: "Kirara" },
+    { name: "kujou-sara", displayName: "Kujou Sara" },
+    { name: "kuki-shinobu", displayName: "Kuki Shinobu" },
+    { name: "mizuki", displayName: "Mizuki" },
+    { name: "raiden-shogun", displayName: "Raiden Shogun" },
+    { name: "sangonomiya-kokomi", displayName: "Sangonomiya Kokomi" },
+    { name: "sayu", displayName: "Sayu" },
+    { name: "shikanoin-heizou", displayName: "Shikanoin Heizou" },
+    { name: "thoma", displayName: "Thoma" },
+    { name: "yae-miko", displayName: "Yae Miko" },
+    { name: "yoimiya", displayName: "Yoimiya" }
   ]
 };

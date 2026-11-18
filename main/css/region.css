@@ -32,6 +32,24 @@
   --glow1: rgba(150, 165, 255, .5); --glow2: rgba(120, 90, 220, .45);
   --icon: url("../images/anemo.png");
 }
+.theme-sea-of-bygone-eras {
+  --accent: #1f4f6f;
+  --g1: #0d2a42; --g2: #1f4f6f; --g3: #2f8aa8;
+  --glow1: rgba(130,210,240,.5); --glow2: rgba(60,130,210,.45);
+  --icon: url("../images/hydro.png");
+}
+.theme-the-chasm {
+  --accent: #7a5a2a;
+  --g1: #2a1f12; --g2: #7a5a2a; --g3: #b08a4a;
+  --glow1: rgba(240,200,120,.5); --glow2: rgba(200,140,70,.45);
+  --icon: url("../images/geo.png");
+}
+.theme-ancient-sacred-mountain {
+  --accent: #5f6f56;
+  --g1: #262a24; --g2: #5f6f56; --g3: #b0652f;
+  --glow1: rgba(240,150,80,.5); --glow2: rgba(180,200,130,.4);
+  --icon: url("../images/pyro.png");
+}
 .theme-inazuma {
   --accent: #7b4fb0;
   --g1: #40266f; --g2: #1d2561; --g3: #1b3a85;
@@ -102,6 +120,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia
 .card { background: var(--card); border-radius: 20px; padding: 28px 30px; box-shadow: 0 2px 14px rgba(60,40,90,.08); min-width: 0; }
 .card h2 { margin: 0 0 16px; font-size: 1.6rem; line-height: 1.2; }
 .lore { grid-column: span 2; }
+.card.wide { grid-column: 1 / -1; }
 .grid + .map-full { margin-top: -24px; }
 .map-full + .grid { padding-top: 48px; grid-template-columns: repeat(2, 1fr); }
 .characters { grid-column: 1 / -1; order: 3; }

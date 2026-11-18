@@ -43,5 +43,31 @@ window.WIKI_DATA.mondstadt = {
     { type: "hangout", name: "Wellspring of Healing", how: "Barbara's hangout event." },
     { type: "hangout", name: "The Cat and the Cocktail", how: "Diona's hangout event." },
     { type: "hangout", name: "Shenanigans and Sweet Wine", how: "Kaeya's hangout event." },
+  ],
+  // Characters. The picture is images/characters/<name>.png. A missing picture shows a round placeholder.
+  characters: [
+    { name: "albedo", displayName: "Albedo" },
+    { name: "amber", displayName: "Amber" },
+    { name: "barbara", displayName: "Barbara" },
+    { name: "bennett", displayName: "Bennett" },
+    { name: "diluc", displayName: "Diluc" },
+    { name: "diona", displayName: "Diona" },
+    { name: "eula", displayName: "Eula" },
+    { name: "fischl", displayName: "Fischl" },
+    { name: "jean", displayName: "Jean" },
+    { name: "kaeya", displayName: "Kaeya" },
+    { name: "klee", displayName: "Klee" },
+    { name: "lisa", displayName: "Lisa" },
+    { name: "mona", displayName: "Mona" },
+    { name: "noelle", displayName: "Noelle" },
+    { name: "razor", displayName: "Razor" },
+    { name: "rosaria", displayName: "Rosaria" },
+    { name: "sucrose", displayName: "Sucrose" },
+    { name: "traveler", displayName: "Traveler" },
+    { name: "venti", displayName: "Venti" },
+    { name: "unknown-show", displayName: "Character name" },
+    { name: "unknown-show1", displayName: "Character name" },
+    { name: "unknown-show2", displayName: "Character name" },
+    { name: "unknown-show3", displayName: "Character name" }
   ]
 };

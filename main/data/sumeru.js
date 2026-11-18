@@ -133,5 +133,22 @@ window.WIKI_DATA.sumeru = {
     { type: "world", name: "Vimana Agama", how: "Finish The World of Aranara." },
     { type: "world", name: "Where Are the Fierce Creatures?", how: "Hidden quest. Talk to Santon." },
     { type: "world", name: "While the Dream Lingers", how: "Find Javi northwest of Sumeru City." },
+  ],
+  // Characters. The picture is images/characters/<name>.png. A missing picture shows a round placeholder.
+  characters: [
+    { name: "alhaitham", displayName: "Alhaitham" },
+    { name: "candace", displayName: "Candace" },
+    { name: "collei", displayName: "Collei" },
+    { name: "cyno", displayName: "Cyno" },
+    { name: "dehya", displayName: "Dehya" },
+    { name: "dori", displayName: "Dori" },
+    { name: "faruzan", displayName: "Faruzan" },
+    { name: "kaveh", displayName: "Kaveh" },
+    { name: "layla", displayName: "Layla" },
+    { name: "nahida", displayName: "Nahida" },
+    { name: "nilou", displayName: "Nilou" },
+    { name: "sethos", displayName: "Sethos" },
+    { name: "tighnari", displayName: "Tighnari" },
+    { name: "wanderer", displayName: "Wanderer" }
   ]
 };

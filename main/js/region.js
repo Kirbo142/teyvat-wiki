@@ -55,6 +55,30 @@
     });
 })();
 
+// Characters: built from this page's data file. The picture is images/characters/<name>.png,
+// and a round placeholder is shown when that file does not exist yet.
+(function () {
+    var data = (window.WIKI_DATA || {})[document.body.dataset.region];
+    var list = document.getElementById("characterList");
+    if (!data || !data.characters || !list) return;
+
+    data.characters.forEach(function (c) {
+        var li = document.createElement("li");
+        var img = document.createElement("img");
+        img.className = "avatar";
+        img.alt = c.displayName;
+        img.addEventListener("error", function () {
+            var placeholder = document.createElement("span");
+            placeholder.className = "avatar";
+            img.replaceWith(placeholder);
+        });
+        img.src = "../images/characters/" + c.name + ".png";
+        li.appendChild(img);
+        li.appendChild(document.createTextNode(c.displayName));
+        list.appendChild(li);
+    });
+})();
+
 // Map: zoom (buttons, Ctrl + scroll, double-click), drag to move
 (function () {
     var view = document.querySelector(".map-full");

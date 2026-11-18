@@ -79,5 +79,21 @@ window.WIKI_DATA.fontaine = {
     { type: "world", name: "Unfinished Comedy", how: "Get captured at the Fortress of Meropide." },
     { type: "world", name: "Waking from the Great Dream", how: "Finish Savior's Wake." },
     { type: "world", name: "Wish-Fulfilling Treasure Hunt", how: "Finish Rowboat's Wake and wait several days." },
+  ],
+  // Characters. The picture is images/characters/<name>.png. A missing picture shows a round placeholder.
+  characters: [
+    { name: "charlotte", displayName: "Charlotte" },
+    { name: "chevreuse", displayName: "Chevreuse" },
+    { name: "chiori", displayName: "Chiori" },
+    { name: "clorinde", displayName: "Clorinde" },
+    { name: "emilie", displayName: "Emilie" },
+    { name: "freminet", displayName: "Freminet" },
+    { name: "furina", displayName: "Furina" },
+    { name: "lynette", displayName: "Lynette" },
+    { name: "lyney", displayName: "Lyney" },
+    { name: "navia", displayName: "Navia" },
+    { name: "neuvillette", displayName: "Neuvillette" },
+    { name: "sigewinne", displayName: "Sigewinne" },
+    { name: "wriothesley", displayName: "Wriothesley" }
   ]
 };

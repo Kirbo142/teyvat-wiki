@@ -8,5 +8,12 @@ window.WIKI_DATA["temple-of-space"] = {
     { type: "world", name: "A Day the Grand Temple Inscribed with Ages", how: "First sub-quest of Paradise." },
     { type: "world", name: "Lion's Celerity", how: "Quest in the Temple of Space. It unlocks a viewpoint near the east waypoint." },
     { type: "world", name: "Temple Commemoration Day", how: "Find Zeitlind's lost belongings across the Temple's three zones." }
+  ],
+  // Characters. The picture is images/characters/<name>.png. A missing picture shows a round placeholder.
+  characters: [
+    { name: "character-name", displayName: "Character name" },
+    { name: "character-name", displayName: "Character name" },
+    { name: "character-name", displayName: "Character name" },
+    { name: "character-name", displayName: "Character name" }
   ]
 };
